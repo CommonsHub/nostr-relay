@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  nostr-relay:
+    image: scsibug/nostr-rs-relay:latest
+    container_name: nostr-relay
+    restart: always
+    environment:
+      - DATABASE_URL=sqlite:///data/nostr.db  # Use PostgreSQL or SQLite
+    volumes:
+      - ./data:/data
+    ports:
+      - "8080:8080"  # Exposes relay on port 8080
