@@ -13,3 +13,4 @@ services:
       - ./data:/data
     ports:
       - "8080:8080"  # Exposes relay on port 8080
+    platform: linux/arm64  # Force ARM64 support if needed
