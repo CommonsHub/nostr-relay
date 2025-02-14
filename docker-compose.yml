@@ -8,6 +8,8 @@ services:
     environment:
       - DATABASE_URL=sqlite:///data/nostr.db  # Use PostgreSQL or SQLite
     volumes:
+      - ./config.toml:/app/config.toml  # Mount from Git repo
+      - ./favicon.ico:/app/favicon.ico  # Mount from Git repo
       - ./data:/data
     ports:
       - "8080:8080"  # Exposes relay on port 8080
