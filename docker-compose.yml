@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   nostr-relay:
-    image: scsibug/nostr-rs-relay:latest
+    image: xdamman/nostr-rs-relay:latest
     container_name: nostr-relay
     restart: always
     environment:
