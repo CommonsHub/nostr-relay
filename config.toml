@@ -42,6 +42,7 @@ engine = "sqlite"
 # also be specified (and overriden) with the "--db dirname" command
 # line option.
 # data_directory = "/home/nostr/relay-db"
+data_directory = "/data"
 
 # Use an in-memory database instead of 'nostr.db'.
 # Requires sqlite engine.
