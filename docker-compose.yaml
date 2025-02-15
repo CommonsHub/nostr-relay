@@ -12,5 +12,5 @@ services:
       - ./favicon.ico:/app/favicon.ico  # Mount from Git repo
       - ./data:/data
     ports:
-      - "8080:8080"  # Exposes relay on port 8080
+      - "8081:8081"  # Exposes relay on port 8081
     platform: linux/arm64  # Force ARM64 support if needed
