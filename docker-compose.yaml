@@ -8,7 +8,7 @@ services:
     environment:
       - DATABASE_URL=sqlite:///data/nostr.db  # Use PostgreSQL or SQLite
     volumes:
-      - ./config.toml:./config.toml  # Mount from Git repo
+      - ./config.toml:/app/config.toml  # Mount from Git repo
       - ./favicon.ico:/app/favicon.ico  # Mount from Git repo
       - ./data:/data
     ports:
